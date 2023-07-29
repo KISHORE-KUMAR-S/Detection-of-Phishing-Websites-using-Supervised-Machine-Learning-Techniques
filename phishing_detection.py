@@ -29,8 +29,16 @@ classifier.fit(X_train, y_train)
 score = classifier.score(X_test, y_test)
 score = score*100
 print(score)
-
-
+classifier1 = MultinomialNaiveBayes()
+classifier1.fit(X_train, y_train)
+score = classifier1.score(X_test, y_test)
+score = score*100
+print(score)
+classifier1 = EnsembleModel()
+classifier1.fit(X_train, y_train)
+score = classifier1.score(X_test, y_test)
+score = score*100
+print(score)
 app = Flask(__name__)
 
 
