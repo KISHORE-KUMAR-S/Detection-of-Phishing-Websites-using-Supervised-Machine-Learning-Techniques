@@ -129,7 +129,7 @@ def generate_data_set(url):
     except:
         data_set.append(-1)
 
-    # 10.Favicon
+    # 10.Request_URL
     if soup == -999:
         data_set.append(-1)
     else:
@@ -162,7 +162,7 @@ def generate_data_set(url):
     else:
         data_set.append(-1)
 
-    #13. Request_URL
+    #13. Favicon
     i = 0
     success = 0
     if soup == -999:
